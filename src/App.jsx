@@ -3,6 +3,8 @@ import { useState } from "react";
 import useLocalStorage from './hook/useLocalStorage'
 
 import Logo from './assets/task.png'
+import Github from './assets/github-logo.png'
+import Linkedin from './assets/linkedin.png'
 
 import Formulario from './componentes/Formulario';
 import EditarFormulario from './componentes/EditarFormulario';
@@ -78,6 +80,14 @@ function App() {
           abrirEdicion={abrirEdicion}
         />
       )}
+      <footer>
+      <a href="https://www.linkedin.com/in/lucrecia-sabrina-mencia-5805bb271/" target="_blank">
+          <img src={Linkedin} className="logo" alt="linkedin logo" />
+        </a>
+        <a href="https://github.com/LucreciaMencia" target="_blank">
+          <img src={Github} className="logo" alt="github logo" />
+        </a>
+      </footer>
     </div>
   )
 }

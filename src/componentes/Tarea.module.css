@@ -4,8 +4,8 @@
     justify-content: space-between;
     gap: .6em;
     font-size: var(--_size);
-    border: .2em solid hsl(var(--muted) / 0.8);
-    padding: .6em;
+    border: .1em solid hsl(var(--muted) / 0.8);
+    padding: .3em;
     border-radius: calc(var(--_radius) * 2);
   }
   
@@ -20,7 +20,7 @@
     position: relative;
     cursor: pointer;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1;
   }
   
   .checkbox {

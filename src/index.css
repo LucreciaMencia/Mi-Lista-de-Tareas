@@ -7,7 +7,13 @@
 }
 
 img{
-  height: 10em;
+  height: 8em;
+}
+
+footer img {
+  margin: .3em;
+  height: 1.5em;
+
 }
 
 button {
@@ -22,65 +28,18 @@ label {
 }
 
 :root {
-  --_hue: 245;
-  --_size: 1.8rem;
-  --_radius: 0.2em;
+  --_hue: 80;
+  --_size: 1.5rem;
+  --_radius: 1em;
   --_tspeed_fast: 180ms;
   --_tspeed_slow: 300ms;
   --_ttype_squish: cubic-bezier(0.86, -0.1, 0.27, 1.15);
 
-  /* Light Mode */
-  --bg--light: var(--_hue) 30% 94%;
-  --txt--light: var(--_hue) 40% 5%;
-  --accent--light: var(--_hue) 55% 50%;
-  --accent1--light: 10 80% 60%;
-  --muted--light: var(--_hue) 30% 99%;
-  /* Dark Mode */
-  --bg--dark: var(--_hue) 15% 10%;
-  --txt--dark: var(--_hue) 30% 88%;
-  --accent--dark: var(--_hue) 50% 50%;
-  --accent1--dark: 10 55% 50%;
-  --muted--dark: var(--_hue) 20% 4%;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: var(--bg--dark);
-    --txt: var(--txt--dark);
-    --accent: var(--accent--dark);
-    --accent1: var(--accent1--dark);
-    --muted: var(--muted--dark);
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: var(--bg--light);
-    --txt: var(--txt--light);
-    --accent: var(--accent--light);
-    --accent1: var(--accent1--light);
-    --muted: var(--muted--light);
-    color-scheme: light;
-  }
-}
-
-:root[color-scheme="dark"] {
-  --bg: var(--bg--dark);
-  --txt: var(--txt--dark);
-  --accent: var(--accent--dark);
-  --accent1: var(--accent1--dark);
-  --muted: var(--muted--dark);
-  color-scheme: dark;
-}
-
-:root[color-scheme="light"] {
-  --bg: var(--bg--light);
-  --txt: var(--txt--light);
-  --accent: var(--accent--light);
-  --accent1: var(--accent1--light);
-  --muted: var(--muted--light);
-  color-scheme: light;
+  --bg: var(--_hue) 30% 94%;
+  --txt: var(--_hue) 40% 50%;
+  --accent: var(--_hue) 55% 50%;
+  --accent1: 10 80% 60%;
+  --muted: var(--_hue) 30% 99%;
 }
 
 @media screen and (max-width: 768px) {
@@ -89,20 +48,11 @@ label {
   }
 }
 
-/* prefers reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --_tspeed_slow: 50ms;
-    --_tspeed_fast: 50ms;
-  }
-}
-
 body {
   min-height: 100vh;
   display: grid;
   justify-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   background-color: hsl(var(--bg));
   color: hsl(var(--txt));
 }
