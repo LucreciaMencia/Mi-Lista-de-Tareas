@@ -81,7 +81,7 @@ function App() {
         />
       )}
       <footer>
-      <a href="https://www.linkedin.com/in/lucrecia-sabrina-mencia-5805bb271/" target="_blank">
+      <a href="https://www.linkedin.com/in/mencialucre" target="_blank">
           <img src={Linkedin} className="logo" alt="linkedin logo" />
         </a>
         <a href="https://github.com/LucreciaMencia" target="_blank">
